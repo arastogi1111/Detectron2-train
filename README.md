@@ -21,8 +21,8 @@ Module for utilizing [Detectron 2](https://github.com/facebookresearch/detectron
  ```
 
  
-#### Notes for training on Server 45
- - Switch off torch.cuda.synchronize calls in [Loss Hook](Detectron2_train/model/loss_hook.py#L56) and Detectron2 [Evaluator](https://github.com/facebookresearch/detectron2/blob/61457a0178939ec8f7ce130fcb733a5a5d47df9f/detectron2/evaluation/evaluator.py#L159)
+#### Notes
+ - Some linux servers may require switching off torch.cuda.synchronize calls in [Loss Hook](Detectron2_train/model/loss_hook.py#L56) and Detectron2 [Evaluator](https://github.com/facebookresearch/detectron2/blob/61457a0178939ec8f7ce130fcb733a5a5d47df9f/detectron2/evaluation/evaluator.py#L159)
  - Change Device flag and directories. 
 
 
